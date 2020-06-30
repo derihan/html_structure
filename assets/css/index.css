@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+.wrapper {
+  display: block;
+  width: 100%;
+}
+
+.wrapper .sidebar{
+  position: relative;
+  /* padding-top:100px; */
+}
+
+.wrapper .sidebar .bg_shadow{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  /* transition: all 0.3s ease; */
+}
+
+.wrapper .sidebar__inner {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  /* box-shadow: 0px 1px 1px 2px rgba(0, 0, 0, 0.125); */
+  background-color: #5f27cd;
+  /* background-color: white; */
+  z-index: 997;
+  transition: all 0.3s cubic-bezier(.77,0,.18,1)
+}
+
+.wrapper .main_container {
+  margin-left: 200px;
+  width: calc(100% - 200px);
+   /* transition: all 0.3s ease; */
+}
+
+
+
+.wrapper .sidebar__inner .siderbar_menu li a {
+  padding: 10px 50px;
+  display: block;
+  height: 90px;
+  position: relative;
+  margin-bottom: 1px;
+  color: #88a3d0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wrapper .sidebar__inner .siderbar_menu li a .icon {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.wrapper .sidebar__inner .siderbar_menu li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: #1fafec;
+  display: none;
+}
+
+
+
+
+.wrapper .main_container .top_navbar {
+  width: calc(100% - 200px);
+  height: 60px;
+  background-color: #fff;;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  padding: 15px 25px;
+  position: fixed;
+  top: 0;
+  left: 200px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.125);
+  transition: all 0.3s ease;
+}
+
+.wrapper .main_container .top_navbar .hamburger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: none;
+}
+
+.wrapper .main_container .top_navbar .hamburger .fas {
+  color: #88a3d0;
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper .main_container .top_navbar .menu {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .main_container .top_navbar .menu li a {
+  margin: 0 15px;
+  padding: 0 15px;
+  position: relative;
+  color: #1d4c9e;
+  font-weight: 400;
+  text-align: center;
+}
+
+.wrapper .main_container .top_navbar .menu li a:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #1fafec;
+  display: none;
+}
+
+.q-cursor{
+  cursor: pointer;
+}
+
+
+
+.wrapper .main_container .wrap_container {
+  /* padding: 30px; */
+  margin-top: 60px;
+}
+
+.wrapper .main_container .wrap_container .item {
+ 
+  padding: 20px;
+  border-bottom: 1px solid #d9e2e7;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+.wrapper .sidebar__inner .closest{
+  position: absolute;
+  top: 10px;
+  /* border-radius: 2px; */
+  border-top-right-radius: 21px;
+  border-bottom-right-radius: 21px;
+  left: 190px;
+  /* right: -30px; */
+  /* padding: 22px; */
+  width: 40px;
+  background-color: #5f27cd;
+  /* background-color: wheat; */
+}
+
+
+
+.bars{
+  vertical-align: middle;
+  /* padding-left: 4px; */
+}
+
+.bars-ham1{
+  height: 2px;
+  position: relative;
+  top: 8px;
+  width: 20px;
+  background-color: #5a5c69;
+}
+
+.bars-ham2{
+  top: 10px;
+  position: relative;
+  height: 2px;
+  width: 15px;
+  background-color: #5a5c69;
+}
+
+.bars-ham3{
+  position: relative;
+  top: 12px;
+  height: 2px;
+  width: 10px;
+  background-color: #5a5c69;
+}
+
+.q-block{
+  display: none;
+}
+
+.item-nav{
+  display: block;
+  padding: 16px 18px;
+}
+
+.accord .link__side{
+  cursor: pointer;
+  display: block;
+  padding: 8px 20px;
+  font-size: 14px;
+  /* justify-content:space-between; */
+  font-weight: 500;
+  background-color: rgba(112, 161, 255,0.1);
+  margin-bottom: 1px;
+  /* border-bottom:1px solid rgba(112, 161, 255,0.1);; */
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+/* .accord .link__side:target .accord-hov{
+  border-left: 2px solid rgba(112, 161, 255,1.0);
+}
+
+.accord-hov{
+  border-left: 2px solid rgba(112, 161, 255,1.0);
+} */
+.slideleft{
+  transition: 0.5s;
+}
+
+
+.btn-purple{
+  background-color: #BB86FC;
+}
+
+.btn-purple:hover{
+  background-color: #BB86FC;
+}
+
+.accord li i{
+  position: relative;
+  left: auto;
+  /* font-size: 18px; */
+  transition: all 0.4 ease;
+}
+
+.accord li.open .link__side{
+  color : white;
+}
+
+.accord li.open i{
+ color :white;
+}
+
+.link__submenu{
+  display: none;
+  overflow: hidden;
+  padding-left: 25px;
+}
+
+.link__submenu div{
+  border-left:1px solid rgba(112, 161, 255,0.3) ;
+  width: 150px;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.text-grey{
+  color:  #27292c;
+}
+
+.link__submenu li a{
+  display: block;
+  padding: 13px 20px;
+  font-size: 12px;
+  margin: 4px 0;
+  color:  rgba(83, 82, 237,1.0);
+  position: relative;
+  text-decoration: none;
+}
+
+.link__side:before{
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.3;
+  opacity: 0;
+  background-color:rgba(255, 255, 255,0.9);
+ 
+}
+
+.link__side:hover:before{
+  opacity: 1;
+  transition: 0.9;
+}
+
+
+
+/* .link__submenu li a:before{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  border-left: 1px solid white;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.link__submenu li a:hover:before{
+  
+} */
+
+
+
+@media screen and (max-width: 800px){
+  .wrapper .sidebar__inner{
+    left: -100%;
+  }
+
+  .slideleft{
+    left: 0px !important;
+    transition: 0.5s;
+  }
+
+  .q-block{
+    display: block;
+  }
+
+  .wrapper .main_container,
+  .wrapper .main_container .top_navbar{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .wrapper .main_container .top_navbar{
+    left: 0;
+  }
+ 
+  
+  .q-hidden{
+    display: none;
+  }
+
+  .wrapper .active{
+    background: rgba(95, 39, 205,0.2);
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    /* content: ''; */
+  }
+  
+  
+
+  /* .wrapper .sidebar__inner .closest{
+   /* display: none; */
+  /* }  */
+  
+}
+
+
+
+@media screen and (max-width: 530px){
+  .wrapper .main_container .top_navbar .menu{
+    display: none;
+  }
+
+
+}

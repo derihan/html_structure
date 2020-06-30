@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/css/index.css">
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="assets/js/jquery.min.js"></script>
+   <script src="assets/js/popper.min.js"></script>
+   <script src="assets/js/bootstrap.min.js"></script>
+   <script src="assets/js/bootstrap.bundle.js"></script>
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="wrapper ">
+     
+      <div class="sidebar ">
+         <!-- <div class="bg_shadow"></div> -->
+
+         <div class="sidebar__inner " style="padding-top: 10px;">
+            <div class="q-cursor q-block float-right p-2 closest" id="closest">
+               <i class="fa fa-times text-white" aria-hidden="true"></i>
+            </div>
+            <div class="d-flex justify-content-between">
+               <div class="q-cursor text-center flex-grow-1">
+                  <i class="fa fa-apple fa-2x text-white" aria-hidden="true"></i>
+                  <h5 class="text-white">Applexe</h5>
+               </div>
+              
+            </div>
+            <ul>
+               <li>
+                  <p class="text-white pl-3 pt-3" style="font-size: 15px;">Menu Utama</p>
+                  <ul class="accord accordion">
+                     <li>
+                        <div class="link__side">
+                           <span class="d-flex" style="height: 25px;">
+                              <a class=" text-left btn-block text-white" style="width: 25px;height: 25px;">
+                                 <i class="fa fa-bandcamp text-white" aria-hidden="true"></i>
+                              </a>
+                              <p class="text-white flex-grow-1">No child</p>
+                              <!-- <i class="fa fa-angle-right pt-1 text-white" aria-hidden="true"></i> -->
+                           </span>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="link__side">
+                           <span class="d-flex" style="height: 25px;">
+                              <a class=" text-left btn-block text-white" style="width: 25px;height: 25px;">
+                                 <i class="fa fa-address-book text-white" aria-hidden="true"></i>
+                              </a>
+                              <p class="text-white flex-grow-1">Kontak</p>
+                              <i class="fa fa-angle-right pt-1 text-white" aria-hidden="true"></i>
+                           </span>
+                        </div>
+                        <ul class="link__submenu">
+                           <div class="">
+                              <li><a href=""> Menu1 </a></li>
+                              <li><a href="">Menu2 </a> </li>
+                           </div>
+                        </ul>
+                     </li>
+                     <li>
+                        <div class="link__side">
+                           <span class="d-flex" style="height: 25px;">
+                              <a class=" text-left btn-block text-white" style="width: 25px;height: 25px;">
+                                 <i class="fa fa-address-book text-white" aria-hidden="true"></i>
+                              </a>
+                              <p class="text-white flex-grow-1">Home</p>
+                              <i class="fa fa-angle-right pt-1 text-white" aria-hidden="true"></i>
+                           </span>
+
+                        </div>
+                        <ul class="link__submenu">
+                           <div>
+                              <li><a href="">Menu1 </a> </li>
+                              <li><a href="">Menu2 </a> </li>
+                              <li><a href="">Menu3 </a> </li>
+                           </div>
+                        </ul>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <p class="text-white pl-3 pt-3" style="font-size: 15px;">Menu Utama</p>
+                  <ul id="" class="accord accordion">
+                     <li>
+                        <div class="link__side">
+                           <span class="d-flex" style="height: 25px;">
+                              <a class=" text-left btn-block text-white" style="width: 25px;height: 25px;">
+                                 <i class="fa fa-address-book text-white" aria-hidden="true"></i>
+                              </a>
+                              <p class="text-white flex-grow-1">Kontak</p>
+                              <i class="fa fa-angle-right pt-1 text-white" aria-hidden="true"></i>
+                           </span>
+                        </div>
+                        <ul class="link__submenu">
+                           <div class="">
+                              <li><a href=""> Menu1 </a></li>
+                              <li><a href="">Menu2 </a> </li>
+                           </div>
+                        </ul>
+                     </li>
+                     <li>
+                        <div class="link__side">
+                           <span class="d-flex" style="height: 25px;">
+                              <a class=" text-left btn-block text-white" style="width: 25px;height: 25px;">
+                                 <i class="fa fa-address-book text-white" aria-hidden="true"></i>
+                              </a>
+                              <p class="text-white flex-grow-1">Home</p>
+                              <i class="fa fa-angle-right pt-1 text-white" aria-hidden="true"></i>
+
+                           </span>
+                        </div>
+                        <ul class="link__submenu">
+                           <div>
+                              <li><a href="">Menu1 </a> </li>
+                              <li><a href="">Menu2 </a> </li>
+                              <li><a href="">Menu3 </a> </li>
+                           </div>
+                        </ul>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="main_container">
+         <div class="top_navbar">
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+            <ul class="d-flex" role="navigation">
+               <li class="flex-grow-1 ">
+                  <div class="d-flex">
+                     <a class="q-block q-cursor bars pr-3" id="burger">
+                        <div class="bars-ham1"></div>
+                        <div class="bars-ham2"></div>
+                        <div class="bars-ham3"></div>
+                     </a>
+                     <a class="btn p-0 " class="q-cursor">
+                        <i class="fa fa-th-large " aria-hidden="true"></i>
+                     </a>
+                  </div>
+
+               </li>
+               <li class="ml-3 q-cursor ">
+                  <i class="fa fa-comment-o " aria-hidden="true"></i>
+               </li>
+               <li class="ml-2 q-cursor">
+                  <i class="fa fa-bell-o " aria-hidden="true"></i>
+               </li>
+               <li class="ml-4">
+                  <div class="q-cursor dropdown">
+                     <button class="p-0 border-0 " style="background: inherit;" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/img/kmj.jpg" class="rounded" style="width: 30px;" alt="">
+                        <i class="fa fa-angle-down ml-1" aria-hidden="true"></i>
+                     </button>
+
+                     <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">My activity</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                     </div>
+                  </div>
+
+               </li>
+
+               <!-- <li>menu 1</li>
+                 
+                  <li>menu 1</li> -->
+            </ul>
+            <!-- </nav> -->
+         </div>
+         <div class="wrap_container">
+            <div class="container-fluid">
+               <!-- <div class="item"> -->
+               <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur id eaque repellat sint at amet doloremque autem in placeat officia incidunt, quo voluptatem dolorum, quasi nostrum molestiae dignissimos cumque nemo! -->
+               <!-- </div> -->
+            </div>
+         </div>
+
+      </div>
+   </div>
+   <script>
+
+      $("#burger").click(function () {
+         $(".wrapper .sidebar").addClass("active")
+         $(".wrapper .sidebar__inner").addClass("slideleft","active")
+         // $("").addClass()
+      })
+
+      $(".wrapper .sidebar .closest").click(function () {
+          $(".wrapper .sidebar").removeClass("active")
+         $(".wrapper .sidebar__inner").removeClass("slideleft", "active")
+      })
+
+
+
+      var Accordion = function (el, multiple) {
+         this.el = el || {};
+         this.multiple = multiple || false;
+         var links = this.el.find('.link__side');
+         links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+      }
+
+      Accordion.prototype.dropdown = function (e) {
+         var $el = e.data.el;
+         $this = $(this),
+            $next = $this.next();
+
+         $next.slideToggle();
+         $this.parent().toggleClass('open');
+
+         // console.log($this);
+         console.log($next);
+
+         if (!e.data.multiple) {
+            $el.find('.link__submenu').not($next).slideUp().parent().removeClass('open');
+         };
+      }
+
+      var accordion = new Accordion($('.accordion'), false);
+
+      // for (let o = 0; o < $(".accord").length; o++) {
+         // const element = array[o];
+      // }
+      // $(".accord").on("click",function(){
+         // console.log(this.id)
+      // })
+      // var i;
+
+   </script>
+</body>
+
+</html>
