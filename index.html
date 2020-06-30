@@ -4,8 +4,9 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="assets/css/index.css">
    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/index.css">
+   
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="assets/js/jquery.min.js"></script>
    <script src="assets/js/popper.min.js"></script>
@@ -16,7 +17,7 @@
 
 <body>
    <div class="wrapper ">
-     
+
       <div class="sidebar ">
          <!-- <div class="bg_shadow"></div> -->
 
@@ -29,7 +30,7 @@
                   <i class="fa fa-apple fa-2x text-white" aria-hidden="true"></i>
                   <h5 class="text-white">Applexe</h5>
                </div>
-              
+
             </div>
             <ul>
                <li>
@@ -175,11 +176,27 @@
             </ul>
             <!-- </nav> -->
          </div>
-         <div class="wrap_container">
-            <div class="container-fluid">
-               <!-- <div class="item"> -->
-               <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur id eaque repellat sint at amet doloremque autem in placeat officia incidunt, quo voluptatem dolorum, quasi nostrum molestiae dignissimos cumque nemo! -->
-               <!-- </div> -->
+            <div class="container-fluid " style="padding-top: 80px;" >
+               <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                     <div class="card text-white bg-primary mb-3" >
+                        <div class="card-header bg-qprimary">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Primary card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                     <div class="card text-white bg-primary mb-3" >
+                        <div class="card-header bg-qprimary">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Primary card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                  </div>
+               </div>
             </div>
          </div>
 
@@ -189,12 +206,12 @@
 
       $("#burger").click(function () {
          $(".wrapper .sidebar").addClass("active")
-         $(".wrapper .sidebar__inner").addClass("slideleft","active")
+         $(".wrapper .sidebar__inner").addClass("slideleft", "active")
          // $("").addClass()
       })
 
       $(".wrapper .sidebar .closest").click(function () {
-          $(".wrapper .sidebar").removeClass("active")
+         $(".wrapper .sidebar").removeClass("active")
          $(".wrapper .sidebar__inner").removeClass("slideleft", "active")
       })
 

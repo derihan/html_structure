@@ -6,9 +6,13 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-size: 14px;
   font-family: "Montserrat", sans-serif;
 }
 
+.bg-qprimary{
+  background-color: rgba(83, 82, 237,0.5);
+}
 
 
 .wrapper {
@@ -41,7 +45,8 @@
   left: 0;
   height: 100%;
   /* box-shadow: 0px 1px 1px 2px rgba(0, 0, 0, 0.125); */
-  background-color: #5f27cd;
+  /* background-color: #5f27cd; */
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   /* background-color: white; */
   z-index: 997;
   transition: all 0.3s cubic-bezier(.77,0,.18,1)
